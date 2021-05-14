@@ -4,7 +4,7 @@ constructor(bodyA,pointB){
     bodyA:bodyA,
     pointB:pointB,
     length:10, 
-    stiffness:0.03,
+    stiffness:0.3,
     }
     this.body=Constraint.create(options) 
     World.add(world, this.body)
