@@ -4,11 +4,9 @@ class Pig extends BaseClass {
     this.image = loadImage("sprites/enemy.png");
 
   this.fade= 255
-
-  }
-  
+  }  
   display(){
-    console.log(this.body.speed)
+    //console.log(this.body.speed)
   if (this.body.speed <3){
     super.display()
   
@@ -29,6 +27,12 @@ pop();
 
   }
 
+score(){
+if(this.fade < 0 && this.fade> -1005){
+score++
 
+}
+
+}
 
 };
